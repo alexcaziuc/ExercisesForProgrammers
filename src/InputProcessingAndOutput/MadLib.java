@@ -1,4 +1,4 @@
-package MadLib;
+package InputProcessingAndOutput;
 
 /*Mad libs are a simple game where you create a story template
         with blanks for words. You, or another player, then
