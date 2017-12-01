@@ -34,14 +34,12 @@ public class CountingNrOfChars {
 
         int length = originalString.length();
 
-        if (originalString.isEmpty())
-        {
+        if (originalString.isEmpty()) {
 
             System.out.println("You must enter something into the program");
-        } else
-            {
+        } else {
 
             System.out.println(originalString + " has " + length + " characters.");
-            }
+        }
     }
 }

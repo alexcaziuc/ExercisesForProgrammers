@@ -43,7 +43,7 @@ public class SimpleMath {
         Scanner input = new Scanner(System.in);
 
         firstNumber = enterNumber("Enter first number: ", input);
-        secondNumber = enterNumber("Enter second number ", input);
+        secondNumber = enterNumber("Enter second number: ", input);
 
         sum = add(firstNumber, secondNumber);
         difference = subtract(firstNumber, secondNumber);

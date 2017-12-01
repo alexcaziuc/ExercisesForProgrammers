@@ -39,6 +39,6 @@ public class PrintingQuotes {
         author = input.nextLine();
         input.close();
 
-        System.out.println(author + " says, " + "\""+ quote + "\".");
+        System.out.println(author + " says, " + "\"" + quote + "\".");
     }
 }
