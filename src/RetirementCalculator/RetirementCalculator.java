@@ -54,7 +54,7 @@ public class RetirementCalculator {
         yearsLeft = whatAgeToRetire - currentAge;
 
         if (yearsLeft <= 0) {
-            System.out.println("You can already retire");
+            System.out.println("You can already retire ");
         } else {
             System.out.printf("You have %d years left until you can retire. ", yearsLeft);
             retirementAge = currentYear + yearsLeft;
