@@ -40,10 +40,9 @@ public class SimpleMath {
 
         double firstNumber, secondNumber;
         double sum, difference, product, quotient;
-        Scanner input = new Scanner(System.in);
 
-        firstNumber = enterNumber("Enter first number: ", input);
-        secondNumber = enterNumber("Enter second number: ", input);
+        firstNumber = enterNumber("Enter first number: ");
+        secondNumber = enterNumber("Enter second number: ");
 
         sum = add(firstNumber, secondNumber);
         difference = subtract(firstNumber, secondNumber);
@@ -57,16 +56,15 @@ public class SimpleMath {
                 firstNumber, secondNumber, quotient);
     }
 
-    private static double enterNumber(String messageToPrint, Scanner input) {
+    private static double enterNumber(String messageToPrint) {
         boolean isNumericalPositiveNumber = true;
-        String numberText;
         double number = 0;
+        Scanner input = new Scanner(System.in);
 
         do {
             try {
                 System.out.print(messageToPrint);
-                numberText = input.nextLine();
-                number = Double.parseDouble(numberText);
+                number = Double.parseDouble(input.nextLine());
 
                 if (number <= 0) {
                     isNumericalPositiveNumber = false;
@@ -78,7 +76,7 @@ public class SimpleMath {
                 System.out.println("Enter a numeric value to proceed! ");
             }
 
-        } while (number <= 0 && isNumericalPositiveNumber == false);
+        } while (number <= 0 && !isNumericalPositiveNumber);
 
         return number;
     }
